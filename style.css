@@ -1,0 +1,53 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.afzayeshi{
+    transform: rotateX(180deg);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(27%) saturate(6728%) hue-rotate(87deg) brightness(105%) contrast(106%);
+}
+.kaheshi{
+    filter: brightness(0) saturate(100%) invert(12%) sepia(96%) saturate(6331%) hue-rotate(360deg) brightness(101%) contrast(112%);
+}
+html{ 
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;     
+}
+main{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin:  2rem 0;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.list-item{
+    padding: .15em .5em;
+    border-radius: .75em;
+    border: 1px solid darkgray;
+}
+.increase{
+    background-color: rgba(0, 255, 110, .3);
+}
+.decrease{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.btn{
+   padding: .5em;
+   border: 1px solid black;
+   background: rgba(0, 255, 110, 0.3);
+   border-radius: .5em;
+   cursor: pointer;
+}
+.btn:hover{
+    background: rgba(0, 255, 110)
+}

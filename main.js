@@ -9,9 +9,6 @@ const types = {
 const fetchData = async () => {
     const response = await fetch('https://esfahanahan.com/api/news')
     const result = await response.json()
-    console.log(result.data[2].related_name)
-    console.log(result.data[1].related_price)
-
     // create a new list item for each news.
     result.data.map((news) => {
         createNewsItem(news)
